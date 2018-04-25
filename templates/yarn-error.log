@@ -1,0 +1,38 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn add --save jquery bootstrap
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.6.0
+
+Node version: 
+  8.9.4
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: unable to verify the first certificate
+      at TLSSocket.<anonymous> (_tls_wrap.js:1103:38)
+      at emitNone (events.js:106:13)
+      at TLSSocket.emit (events.js:208:7)
+      at TLSSocket._finishInit (_tls_wrap.js:637:8)
+      at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:467:38)
+
+npm manifest: 
+  {
+    "name": "BPCoin",
+    "version": "0.1.0",
+    "main": "index.js",
+    "author": "BardinPetr",
+    "license": "GPL-v3",
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

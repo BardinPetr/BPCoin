@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:background-color="http://www.w3.org/1999/xhtml">
+<head>
+    <title>BPCoin</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        label {
+            color: #ffffff;
+        }
+
+        p,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: limegreen;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">BPCoin - WEB</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/top">Top</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/wallet">
+                <span class="glyphicon glyphicon-log-in"></span> Wallet</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="panel panel-default" style="border-color: #000">
+    <div class="panel-heading" style="background-color:#666666; color: lime">Top users</div>
+    <div class="panel-body" style="background-color: #444">
+        <ul class="list-group">
+            {% for id, name, cnt in data %}
+                        <li class="list-group-item" style="background-color: #bbbbbb"><strong>#{{ id }}</strong> {{ name }} <span class="badge">{{ cnt }} BPC</span></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+</body>
+</html>

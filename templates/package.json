@@ -1,0 +1,11 @@
+{
+  "name": "BPCoin",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "BardinPetr",
+  "license": "GPL-v3",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.1.0"
+  }
+}
